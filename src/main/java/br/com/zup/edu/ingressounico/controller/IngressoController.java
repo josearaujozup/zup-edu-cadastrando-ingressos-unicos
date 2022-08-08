@@ -40,7 +40,7 @@ public class IngressoController {
 
         repository.save(ingresso);
 
-        URI location = uriComponentsBuilder.path("/alunos/{id}")
+        URI location = uriComponentsBuilder.path("/ingressos/{id}")
                 .buildAndExpand(ingresso.getId())
                 .toUri();
 
